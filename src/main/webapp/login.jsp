@@ -42,10 +42,15 @@
 									type="text" name="uname" id="username"
 									placeholder="Your username" required/>
 							</div>
+							
 							<div class="form-group">
 								<label for="password"><i class="zmdi zmdi-lock"></i></label> <input
 									type="password" name="upwd" id="password"
 									placeholder="Password" required/>
+							</div>
+							
+							<div class="form-group">
+								<a href="forgotPassword.jsp">Forgot Password?</a>
 							</div>
 							
 							<div class="form-group form-button">
@@ -84,6 +89,12 @@
 		}
 		if(status == "success"){
 			swal("Congrats","Your account created successfully","success")
+		}
+		if(status == "resetSuccess"){
+			swal("Congrats","Your password reset successfully","success")
+		}
+		if(status == "resetFailed"){
+			swal("Sorry","Password reset unsuccessfull","success")
 		}
 	</script>
 	
