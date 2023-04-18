@@ -80,8 +80,7 @@ body {
 					<div class="card-footer">
 						<button class="btn btn-success" type="submit">Get New
 							Password</button>
-						<button class="btn btn-danger" type="submit">Back to
-							Login</button>
+						<a href="login.jsp" class="btn btn-danger" role="button">Back to login</a>
 					</div>
 				</form>
 			</div>
